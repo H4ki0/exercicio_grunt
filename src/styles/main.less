@@ -1,0 +1,79 @@
+// Variáveis
+@font-main: 'Roboto', sans-serif;
+@color-primary: #007bff;
+@color-white: #fff;
+@color-text: #333;
+@color-bg: #f2f2f2;
+@color-border: #ccc;
+@color-error: red;
+@shadow-default: 0 0 10px rgba(0, 0, 0, 0.1);
+
+// Reset global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-main;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: @color-bg;
+    color: @color-text;
+}
+
+header {
+    background-color: @color-primary;
+    color: @color-white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: @color-white;
+    box-shadow: @shadow-default;
+
+    button {
+        background-color: @color-primary;
+        color: @color-white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+.form-campo {
+    margin-bottom: 20px;
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid @color-border;
+        border-radius: 5px;
+    }
+}
+
+.error {
+    color: @color-error;
+}
